@@ -5,9 +5,9 @@ import "@openzeppelin/contracts/utils/Context.sol"; // Importing Context for bas
 import "./DvTicket.sol"; // Importing the DvTicket contract as a base for the ticketing system.
 
 /**
- * @title DvVisitorTicket
+ * @title DvPublisherTicket
  * @dev Extends the DvTicket contract to implement a specific use case of NFTs (Non-Fungible Tokens),
- * representing visitor tickets with unique identifiers and metadata.
+ * representing Publisher tickets with unique identifiers and metadata.
  * 
  * Each ticket (NFT) is associated with a root ID and URI, indicating a common origin or category
  * for the tickets. This can be used to group tickets by event, location, or other criteria.
@@ -51,7 +51,7 @@ contract DvPublisherTicket is DvTicket {
     }
 
     /**
-     * @notice Issues a new Visitor ticket (NFT) to a specified address.
+     * @notice Issues a new Publisher ticket (NFT) to a specified address.
      * @dev Mints a new ticket with a unique ID and associates it with a specific URI. Can only be called by the collection owner.
      * @param to The address to which the new ticket will be issued.
      * @param tokenId The unique identifier for the new ticket.
